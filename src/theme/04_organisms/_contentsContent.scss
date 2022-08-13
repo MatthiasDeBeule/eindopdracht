@@ -1,0 +1,22 @@
+@import "../03_molecules/content1";
+@import "../03_molecules/cta";
+
+.contentsContent{
+    width: 65%;
+    height: 55vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+
+    background: $backgroundLight;
+    border-radius: 0.5rem;
+
+    & .content1{
+    }
+
+    &__img{
+        width: 88%;
+        margin: 0 auto;
+    }
+}

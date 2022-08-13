@@ -1,0 +1,32 @@
+@import "../02_atoms/img";
+@import "../02_atoms/text";
+@import "../02_atoms/headings";
+
+.content2{
+    width: 45vw;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    &__top{
+        display: flex;
+
+        margin-bottom: 1rem;
+    }
+
+    &__img{
+        margin: 0.3rem 0.5rem 0 0;
+
+        &-1{
+        width: 12%;
+        }
+        &-2{
+        width: 12%;
+        }
+        &-3{
+        width: 17%;
+        }
+    }
+    &__paragraph{
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

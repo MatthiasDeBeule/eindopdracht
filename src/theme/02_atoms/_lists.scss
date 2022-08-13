@@ -1,0 +1,13 @@
+@import "../01_fundaments/vars";
+
+li{
+    font-size: 16px;
+    border-bottom: 1px solid $backgroundLight;
+    padding-bottom: 4px;
+}
+
+@media (min-width: 1024px){
+    li{
+        font-size: 12px;
+    }
+}

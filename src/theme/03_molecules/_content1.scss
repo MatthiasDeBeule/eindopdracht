@@ -1,0 +1,50 @@
+@import "../01_fundaments/vars";
+@import "../02_atoms/headings";
+@import "../02_atoms/text";
+
+.content1{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 0 auto;
+
+    text-align: center;
+
+    width: 72%;
+
+
+    &__title{
+        width: 85%;
+
+        margin: 0 auto;
+    }
+    &__paragraph{
+        margin: 1.2rem 0;
+    }
+
+    &-img{
+        img{
+            width: 90%;
+        }
+    }
+    &-small{
+        width: 55%;
+    }
+    &-dark{
+        width: 80%;
+
+        & .content1__title{
+            color: $textprimary;
+
+            width: 55%;
+        }
+        & .content1__paragraph{
+            color: $textprimary;
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 300;
+        }
+        
+    }
+}
+

@@ -1,0 +1,9 @@
+const nav__flyoutMenu = document.getElementsByClassName('nav__flyoutMenu')[0]
+const nav__ul = document.getElementsByClassName('nav__ul')[0]
+
+nav__flyoutMenu.addEventListener('click', () => 
+    {
+        nav__ul.classList.toggle('nav__ul-active')
+        nav__flyoutMenu.classList.toggle('nav__flyoutMenu-active')
+    }
+)

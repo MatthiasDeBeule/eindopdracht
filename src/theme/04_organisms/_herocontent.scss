@@ -1,0 +1,14 @@
+@import "../03_molecules/content1";
+@import "../03_molecules/cta";
+@import "../03_molecules/heroImg";
+
+.heroContent{
+    margin-top: 16vw;
+
+    .content1{
+        &__paragraph{
+            margin-bottom: 3rem;
+        }
+    }
+}
+

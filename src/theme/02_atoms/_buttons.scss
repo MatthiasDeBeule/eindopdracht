@@ -1,0 +1,42 @@
+@import "../01_fundaments/vars";
+@import "../01_fundaments/animations";
+
+.button{
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    border: none;
+    font-weight: 400;
+    transition: $transition1;
+    &:active{
+        box-shadow: $shadow;
+        background: $textLight;
+        color: $backgroundDark;
+    }
+    
+    &:hover{
+        box-shadow: $shadow;
+    }
+
+    &-1{
+        padding: 0.3em 2.6em;
+        background: $backgroundDark;
+        border: 1px solid $backgroundLight;
+    }
+    &-2{
+        padding: 0.6em 3em;
+        background: $primary;
+    }
+    &-3{
+        padding: 0.9em 2.6em;
+        background: $primary;
+        &:active{
+            color: $primary;
+        }
+    }
+    &-4{
+        padding: 0.9em 2.6em;
+        background: $backgroundDark;
+        border: 1px solid $backgroundLight;
+    }
+}

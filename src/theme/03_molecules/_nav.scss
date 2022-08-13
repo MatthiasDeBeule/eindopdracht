@@ -1,0 +1,118 @@
+@import "../01_fundaments/vars";
+@import "../01_fundaments/animations";
+
+@import "../02_atoms/buttons";
+@import "../02_atoms/img";
+@import "../02_atoms/headings";
+@import "../02_atoms/links";
+@import "../02_atoms/lists";
+
+.nav{
+
+    &__ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+
+        margin-left: auto;
+        margin-right: auto;
+        left: 0rem;
+        right: 0;
+        top: 3.8rem;
+        text-align: center;
+        padding-bottom: 40rem;
+
+        background: $backgroundDark;
+
+        transform:scalex(0);
+        transform-origin: 100% 50%;
+        transition: $transition1;
+        
+                
+        &-active{
+            transform:scalex(1);
+        }
+    }
+    &__item{
+        padding-top: 4rem;
+
+        &:active{
+            background:$backgroundLight;
+        }
+    }
+
+    &__stroke{
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        transition: $transition2;
+
+        &-2{
+            width: 70%;
+        }
+        &-3{
+            width: 40%;
+        }
+
+        &-active{
+            .nav{
+                &__ul{
+                    display: flex
+                }
+            }
+        }
+    }
+
+    &__flyoutMenu{
+        display: flex;
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 30px;
+        height: 18px;
+
+        position: absolute;
+        top: 1.75rem;
+        right: 1rem;
+
+        &-active{
+            .nav__stroke{
+                &-2{
+                    width: 100%;
+                }
+                &-3{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}
+
+@media (min-width: 1024px){
+    .nav{ 
+        display: block;
+        &__ul{
+            position: static;
+            flex-direction: row;
+
+            justify-content: space-between;
+
+            top:0;
+            transform:scalex(1);
+        }  
+        &__item{
+            padding: 0;
+            width: 4.8rem;
+            height: 2rem;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__flyoutMenu{
+            display: none;
+        }
+    }   
+}

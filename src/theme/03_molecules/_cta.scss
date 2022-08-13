@@ -1,0 +1,14 @@
+@import "../01_fundaments/vars";
+@import "../02_atoms/buttons";
+@import "../02_atoms/links";
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+
+    &__a{
+        margin-bottom: 0.5rem;
+    }
+}
