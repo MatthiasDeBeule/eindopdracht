@@ -1,3 +1,20 @@
 @import "00_common/reset";
 @import "01_fundaments/vars";
-@import "01_fundaments/typography";
+@import "01_fundaments/fonts";
+@import "01_fundaments/spacers";
+
+//pages
+@import "06_pages/1_hero.scss";
+@import "06_pages/2_features.scss";
+@import "06_pages/3_contents.scss";
+@import "06_pages/4_content.scss";
+@import "06_pages/5_partners.scss";
+@import "06_pages/6_testimonial.scss";
+@import "06_pages/7_content.scss";
+@import "06_pages/8_footer.scss";
+//
+
+body{
+    background: $backgroundDark;
+    max-width:$maxWidth;
+}
