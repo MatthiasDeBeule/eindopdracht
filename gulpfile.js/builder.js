@@ -19,7 +19,7 @@ const html = function() {
 };
 
 const js = function() {
-    return gulp.src(`${origin}/assets/js/*.js`)
+    return gulp.src(`${origin}/theme/*.js`)
     .pipe(concat('all.js'))
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
@@ -39,7 +39,7 @@ const img = function() {
     return gulp.src(`${origin}/assets/img/**/*.*`)
     .pipe(webp())
     .pipe(imagemin())
-    .pipe(gulp.dest(`${destination}/assets/images`));
+    .pipe(gulp.dest(`${destination}/assets/img`));
 };
 
 

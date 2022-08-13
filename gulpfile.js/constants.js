@@ -1,4 +1,4 @@
 const origin = 'src';
-const destination = 'build';
+const destination = 'public';
 
 module.exports = {origin, destination};
