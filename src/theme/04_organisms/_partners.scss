@@ -1,0 +1,12 @@
+@import "../03_molecules/partnersLogos";
+
+.partners{
+    width: 60vw;
+    margin: 0 auto;
+
+    &__a{
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+    }
+}

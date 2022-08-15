@@ -1,0 +1,15 @@
+@import "../03_molecules/footerInfo";
+@import "../03_molecules/socials";
+
+.footerInfo{
+    width: 70vw;
+    margin: 0 auto;
+}
+
+@media (min-width: 1100px){
+    .footerInfo{
+        width: auto;
+        flex-direction: row;
+        margin-right: 0;
+    }
+}

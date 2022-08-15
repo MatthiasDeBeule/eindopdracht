@@ -1,0 +1,20 @@
+.footerInfo{
+    padding-top: 2rem;
+
+    &__row{
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__img{
+        width: 2.2rem;
+        padding: 0.25rem;
+
+        &-l{
+            width: 2.4rem;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import "../02_atoms/img";
+
+.images{
+    display: flex;
+    flex-direction: column;
+
+    width: 16rem;
+    margin: 0 auto;
+
+    &__img img{
+        border-radius: .8rem;
+        margin: 0.6rem 0;
+    }
+
+    &__desktop{
+        display: none;
+    }
+}
+
+@media (min-width: 1100px){
+    .images{
+        flex-direction: row;
+        width: 58rem;
+
+
+        &__img{
+            border-radius: .8rem;
+            margin: 0 0.75rem;
+        }
+        &__desktop{
+            display: flex;
+            width: 100%;
+        }
+        
+    }
+}

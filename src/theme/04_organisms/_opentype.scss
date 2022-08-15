@@ -1,0 +1,29 @@
+@import "../03_molecules/titleButton";
+@import "../02_atoms/img";
+
+.openType{
+    margin: 0 auto;
+    background: $backgroundGrey;
+}
+
+@media (min-width: 1100px){
+    .openType{
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 70%;
+        height: 17rem;
+
+        &__img{
+            width: 100%;
+            border-radius: 2rem;
+            overflow: hidden;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    }
+}

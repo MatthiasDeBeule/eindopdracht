@@ -1,0 +1,11 @@
+.profile{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    &__img{
+        width: 3rem;
+    }
+    &__R{
+        margin-left: 1.2rem;
+    }
+}

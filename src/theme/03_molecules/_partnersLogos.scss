@@ -1,0 +1,42 @@
+.partnersLogos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__img{
+        width: 10vw;
+        margin: 1rem;
+
+        &-zoom{
+            width: 15vw;
+            height: auto;
+        }
+        &-zoom2{
+            width: 9vw;
+            height: auto;
+        }
+    }
+}
+
+@media (min-width: 1100px){
+    .partnersLogos{
+        flex-wrap: nowrap;
+
+        &__img{
+            width: 4vw;
+            margin: 1.8rem;
+
+            &-zoom{
+                width: 7vw;
+                height: auto;
+            }
+            &-zoom2{
+                width: 3.5vw;
+                height: auto;
+            }
+        }
+    }
+}

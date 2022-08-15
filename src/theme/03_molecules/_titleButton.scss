@@ -1,0 +1,32 @@
+.titleButton{
+    width: 70vw;
+    margin: 0 auto;
+
+    &__title{
+        text-align: center;
+        padding-top: 5rem;
+    }
+    &__a{
+        display: flex;
+        justify-content: center;
+
+        padding: 1rem 0 4rem 0;
+    }
+}
+
+@media (min-width: 1100px){
+    .titleButton{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+
+        margin-left: 4rem;
+        margin-top: 4rem;
+        
+        &__title{
+            padding-top: 0rem;
+            text-align: left;
+        }
+    }
+}

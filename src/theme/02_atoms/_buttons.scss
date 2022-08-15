@@ -19,12 +19,12 @@
     }
 
     &-1{
-        padding: 0.3em 2.6em;
+        padding: 0.5em 2.8em;
         background: $backgroundDark;
         border: 1px solid $backgroundLight;
     }
     &-2{
-        padding: 0.6em 3em;
+        padding: 0.6em 3.2em;
         background: $primary;
     }
     &-3{
@@ -39,4 +39,12 @@
         background: $backgroundDark;
         border: 1px solid $backgroundLight;
     }
+    &-5{
+        padding: 0.5em 4.6em;
+        background: $primary;
+    }
+}
+
+.display{
+    display: none;
 }

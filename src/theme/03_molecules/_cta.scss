@@ -12,3 +12,14 @@
         margin-bottom: 0.5rem;
     }
 }
+
+@media (min-width: 1100px){
+    .cta{
+        flex-direction: row;
+
+        &__a{
+            margin-right: 1rem;
+            height: 1rem;
+        }
+    }
+}

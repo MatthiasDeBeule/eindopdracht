@@ -1,0 +1,18 @@
+@import "../03_molecules/galleryImgs";
+@import "../02_atoms/buttons";
+
+.gallery{
+    &__a{
+        display: flex;
+        justify-content: center;
+
+        padding: 1.2rem 0;
+    }
+}
+
+@media (min-width: 1100px){
+    .gallery{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
