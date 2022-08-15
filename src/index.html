@@ -11,7 +11,11 @@
 <body>
     <section class="heroSection">
         <header class="header">
-            <a href="#" class="header__a"><img class="header__logo" src="/assets/img/logo.webp"></a>
+            <a href="#" class="header__a">
+                <img class="header__logo" 
+                src="/assets/img/logo.webp"
+                alt="figma land logo">
+            </a>
             <nav class="nav">
                 <ul class="nav__ul">
                     <a href="#"><li class="nav__item">Home</li></a>
@@ -25,7 +29,7 @@
                     <div class="nav__stroke nav__stroke-3"></div>
                 </a>
             </nav>
-            <button class="button button-1">Login</button>
+            <a href="#" class="header__a"><button class="button button-1">Login</button></a>
         </header>
 
         <div class="heroContent">
@@ -44,69 +48,89 @@
             </div>
 
             <div class="heroImg">
-                <img src="/assets/img/hero_screens.webp">
+                    <img srcset="/assets/img/hero_screens_l.webp 1024w, 
+                    /assets/img/hero_screens.webp 1w,"
+                    sizes="(min-width: 1024px) 1024px, 
+                    (max-width: 1023px) 1px"
+                    alt="large image of screenshot example">
             </div>
         </div>
     </section>  
 
     <section class="featuresSection">
         <div class="featuresContent">
-            <div class="content1 content1-img">
+            <div class="content1">
                 <h2 class="content1__title">FEATURES</h1>
                 <p class="content1__paragraph">
                     Most calendars are designed for teams. 
                     Slate is designed for freelancers who want 
                     a simple way to plan their schedule.
                 </p>
-                <div class="content1__img">
-                    <img src="/assets/img/features_screens.webp">
-                </div>
             </div>
         </div>
 
         <div class="featuresContent2">
-            <div class="content2">
-                <div class="content2__top">
-                    <div class="content2__img content2__img-1">
-                        <img src="/assets/img/source_of_truth.svg">
-                    </div>
-                    <h3>A single Source of truth</h3>
-                </div>
-                <p class="content2__paragraph">
-                    When you add work to your slate calender 
-                    we automatically calculate useful insights
-                </p>
+            <div class="featuresContent2__img">
+                <img srcset="/assets/img/features_screens_l.webp 1024w, 
+                /assets/img/features_screens.webp 1w,"
+                sizes="(min-width: 1024px) 1024px, 
+                (max-width: 1023px) 1px"
+                alt="large image of screenshot example">
             </div>
-
-            <div class="content2">
-                <div class="content2__top">
-                    <div class="content2__img content2__img-2">
-                        <img src="/assets/img/intuitive_interface.svg">
+            <div class="content2Wrapper">
+                <div class="content2">
+                    <div class="content2__top">
+                        <div class="content2__img content2__img-1">
+                            <img 
+                            src="/assets/img/source_of_truth.svg"
+                            alt="icon fork + spoon"
+                            >
+                        </div>
+                        <h3 class="content2__title">A single Source of truth</h3>
                     </div>
-                    <h3>Intuitive<br> interface</h3>
+                    <p class="content2__paragraph">
+                        When you add work to your slate calender 
+                        we automatically calculate useful insights
+                    </p>
                 </div>
-                <p class="content2__paragraph">
-                    When you add work to your slate calender 
-                    we automatically calculate useful insights
-                </p>
+    
+                <div class="content2">
+                    <div class="content2__top">
+                        <div class="content2__img content2__img-2">
+                            <img 
+                            src="/assets/img/intuitive_interface.svg"
+                            alt="icon alien"
+                            >
+                        </div>
+                        <h3>Intuitive<br> interface</h3>
+                    </div>
+                    <p class="content2__paragraph">
+                        When you add work to your slate calender 
+                        we automatically calculate useful insights
+                    </p>
+                </div>
+    
+                <div class="content2">
+                    <div class="content2__top">
+                        <div class="content2__img content2__img-3">
+                            <img 
+                            src="/assets/img/with_rules.svg"
+                            alt="icon infinity"
+                            >
+                        </div>
+                        <h3>Or with rules</h3>
+                    </div>
+                    <p class="content2__paragraph">
+                        When you add work to your slate calender 
+                        we automatically calculate useful insights
+                    </p>
+                </div>  
             </div>
-
-            <div class="content2">
-                <div class="content2__top">
-                    <div class="content2__img content2__img-3">
-                        <img src="/assets/img/with_rules.svg">
-                    </div>
-                    <h3>Or with rules</h3>
-                </div>
-                <p class="content2__paragraph">
-                    When you add work to your slate calender 
-                    we automatically calculate useful insights
-                </p>
-            </div>  
+            
         </div>   
     </section>
 
-    <section class="ContentsSection">
+    <section class="contentsSection">
         <div class="content1 content1-small">
             <h2 class="content1__title">Contents</h2>
             <p class="content1__paragraph">
@@ -115,61 +139,369 @@
                 It's only a keystroke away.
             </p>
         </div>
-        <div class="contentsContent">
-            <div class="content1 content1-dark">
-                <h4 class="content1__title">Work</h4>
-                <p class="content1__paragraph">
-                    Ever wondered if you're too reliant 
-                    on a client for work? Slate helps 
-                    you identify .
-                </p>
+        <div class="contentsWrapper">
+            <div class="contentsContent">
+                <div class="content1 content1-dark">
+                    <h4 class="content1__title">Work</h4>
+                    <p class="content1__paragraph ">
+                        Ever wondered if you're too reliant 
+                        on a client for work? Slate helps 
+                        you identify .
+                    </p>
+                </div>
+
+                <div class="cta">
+                    <a href="#" class="cta__c"><button class="button button-2">Sign Up</button></a>
+                </div>
+                    
+                <div class="contentsContent__img">
+                    <img 
+                    src="assets/img/macbook_pro.svg"
+                    alt="macbook pro"
+                    >
+                </div>
             </div>
 
-            <div class="cta">
-                <a href="#" class="cta__c"><button class="button button-2">Sign Up</button></a>
-            </div>
-                
-            <div class="contentsContent__img">
-                <img src="assets/img/macbook_pro.svg">
-            </div>
-        </div>
+            <div class="contentsContent">
+                <div class="content1 content1-dark">
+                    <h4 class="content1__title">Design with real data</h4>
+                    <p class="content1__paragraph">
+                        Ever wondered if you're too reliant 
+                        on a client for work? Slate helps 
+                        you identify .
+                    </p>
+                </div>
 
-        <div class="contentsContent">
-            <div class="content1 content1-dark">
-                <h4 class="content1__title">Design with real data</h4>
-                <p class="content1__paragraph">
-                    Ever wondered if you're too reliant 
-                    on a client for work? Slate helps 
-                    you identify .
-                </p>
-            </div>
-
-            <div class="cta">
-                <a href="#" class="cta__c"><button class="button button-2">Try For Free</button></a>
-            </div>
-                
-            <div class="contentsContent__img">
-                <img src="assets/img/boards_notifications.webp">
+                <div class="cta">
+                    <a href="#" class="cta__c"><button class="button button-2">Try For Free</button></a>
+                </div>
+                    
+                <div class="contentsContent__img2">
+                    <img 
+                    src="assets/img/boards_notifications.webp"
+                    alt="screens with notifications"
+                    >
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="PartnersSection">
+    <section class="gallerySection">
+        <div class="content1">
+            <h2 class="content1__title">Gallery</h2>
+            <p class="content1__paragraph">
+                We focus on ergonomics and meeting
+                you where you work. 
+                It's only a keystroke away.
+            </p>
+        </div>
+        <div class="gallery">
+            <div class="images">
+                <div class="images__img">
+                    <img srcset="/assets/img/drone-l.webp 1024w, 
+                    /assets/img/drone.webp 1w,"
+                    sizes="(min-width: 1024px) 1024px, 
+                    (max-width: 1023px) 1px"
+                    alt="top view of a drone">
+                </div>
+                <div class="images__img">
+                    <img srcset="/assets/img/tablet.webp 1024w, 
+                    /assets/img/headphones.webp 1w,"
+                    sizes="(min-width: 1024px) 1024px, 
+                    (max-width: 1023px) 1px"
+                    alt="top view of a drone">
+                </div>
+                <div class="images__img">
+                    <img srcset="/assets/img/meeting.webp 1024w, 
+                    /assets/img/typing.webp 1w,"
+                    sizes="(min-width: 1024px) 1024px, 
+                    (max-width: 1023px) 1px"
+                    alt="top view of a drone">
 
+                </div>
+                <div class="images__img">
+                    <img srcset="/assets/img/do_more.webp 1024w, 
+                    /assets/img/laptop.webp 1w,"
+                    sizes="(min-width: 1024px) 1024px, 
+                    (max-width: 1023px) 1px"
+                    alt="top view of a drone">
+                </div>
+            </div>
+            
+            <div class="images images__desktop">
+                <div class="images__img">
+                    <img src="/assets/img/computer_coding.webp"
+                    alt="laptop with code on it">
+                </div>
+                <div class="images__img">
+                    <img src="/assets/img/laptop_microsoft.webp"
+                    alt="laptop with a microsoft cup next to it">
+                </div>
+                <div class="images__img">
+                    <img src="/assets/img/camera_canon.webp"
+                    alt="Canon camera on a pillow">
+                </div>
+            </div>
+        </div>
+        <a class="gallery__a"><button class="button button-1 galleryButton">See more</button></a>
     </section>
 
-    <section class="TestimonialsSection">
+    <section class="partnersSection">
+        <div class="content1">
+            <h2 class="content1__title">Partners</h2>
+            <p class="content1__paragraph">
+                We focus on ergonomics 
+                and meeting you where you work. 
+                It's only a keystroke away.
+            </p>
+        </div>
+        <div class="partners">
+            <div class="partnersLogos">
+                <div class="partnersLogos__img">
+                    <img 
+                    src="/assets/img/logos_apple-app-store.svg"
+                    alt="logo appstore"
+                    >
+                </div>
+                <div class="partnersLogos__img">
+                    <img 
+                    src="/assets/img/logos_apiary.svg"
+                    alt="logo apiary"
+                    >
+                </div>
+                <div class="partnersLogos__img">
+                    <img 
+                    src="/assets/img/logos_android-icon.svg"
+                    alt="logo android"
+                    >
+                </div>
+                <div class="partnersLogos__img">
+                    <img 
+                    src="/assets/img/logos_basecamp.svg"
+                    alt="logo basecamp"
+                    >
+                </div>
+                <div class="partnersLogos__img partnersLogos__img-zoom2">
+                    <img 
+                    src="/assets/img/logos_airbnb.svg"
+                    alt="logo airbnb"
+                    >
+                </div>
+                <div class="partnersLogos__img partnersLogos__img-zoom">
+                    <img 
+                    src="/assets/img/logos_ibm.svg"
+                    alt="logo ibm"
+                    >
+                </div>
+            </div>
+            
+            <a href="#" class="partners__a"><button class="button button-1">All Partners</button></a>
+        </div>
+    </section>
+
+    <section class="testimonialsSection">
+        <div class="testimonials">
+        <h2 class="testimonials__title">Testimonials</h2>
+            <div class="testimonial">
+                <div class="profile">
+                    <div class="profile__img">
+                        <img 
+                        src="/assets/img/profile1.webp"
+                        alt="profile picture"
+                        >
+                    </div>
+                    <div class="profile__R">
+                        <h5 class="profile__name">Wade Steward</h4>
+                        <h5 class="profile__title">Designer</h4>
+                    </div>
+                </div>
+                <div class="testimonial__paragraph">
+                    <p>
+                    Slate helps you see how many 
+                    more days you need to work to 
+                    reach your financial goal for the
+                        month and year. Slate helps 
+                    you see how many more days 
+                    you need to work to reach your 
+                    financial goal for the month and 
+                    year.your financial 
+                    goal for the month and year.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="testimonial">
+                <div class="profile">
+                    <div class="profile__img">
+                        <img 
+                        src="/assets/img/profile2.webp"
+                        alt="profile picture"
+                        >
+                    </div>
+                    <div class="profile__R">
+                        <h5 class="profile__name">Phillip Watson</h4>
+                        <h5 class="profile__title">Designer</h4>
+                    </div>
+                </div>
+                <div class="testimonial__paragraph">
+                    <p>
+                    Slate helps you see how many 
+                    more days you need to work to 
+                    reach your financial goal for the
+                     month and year. Slate helps 
+                    you see how many more days 
+                    you need to work to reach your 
+                    financial goal for the month and 
+                    year.your financial 
+                    goal for the month and year.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="testimonial">
+                <div class="profile">
+                    <div class="profile__img">
+                        <img 
+                        src="/assets/img/profile3.webp"
+                        alt="profile picture"
+                        >
+                    </div>
+                    <div class="profile__R">
+                        <h5 class="profile__name">Arthur Wilson</h4>
+                        <h5 class="profile__title">Designer</h4>
+                    </div>
+                </div>
+                <div class="testimonial__paragraph">
+                    <p>
+                    Slate helps you see how many 
+                    more days you need to work to 
+                    reach your financial goal for the
+                     month and year. Slate helps 
+                    you see how many more days 
+                    you need to work to reach your 
+                    financial goal for the month and 
+                    year.your financial 
+                    goal for the month and year.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="testimonial">
+                <div class="profile">
+                    <div class="profile__img">
+                        <img 
+                        src="/assets/img/profile4.webp"
+                        alt="profile picture"
+                        >
+                    </div>
+                    <div class="profile__R">
+                        <h5 class="profile__name">Regina Black</h4>
+                        <h5 class="profile__title">Designer</h4>
+                    </div>
+                </div>
+                <div class="testimonial__paragraph">
+                    <p>
+                    Slate helps you see how many 
+                    more days you need to work to 
+                    reach your financial goal for the
+                     month and year. Slate helps 
+                    you see how many more days 
+                    you need to work to reach your 
+                    financial goal for the month and 
+                    year.your financial 
+                    goal for the month and year.
+                    </p>
+                </div>
+            </div>
+        </div>
 
     </section>
 
     <section class="openTypeSection">
-
+        <div class="openType">
+            <div class="titleButton">
+                <h2 class="titleButton__title">OpenType features and Variable fonts</h2>
+                <a class="titleButton__a"><button class="button button-5">Try For Free</button></a>
+            </div>
+            <div class="openType__img">
+                <img srcset="/assets/img/lightning_fast_prototyping-l.webp 1024w, 
+                /assets/img/lightning_fast_prototyping.webp 1w,"
+                sizes="(min-width: 1024px) 1024px, 
+                (max-width: 1023px) 1px"
+                alt="lightning fast prototyping">
+            </div>
+        </div>
     </section>
 
-    <section class="footer">
-        <footer>
+    <footer class="footer">
+        <div class="footerTop">
+            <div class="footerBlock">
+                <h4 class="footerBlock__title">Fingertipe</h4>
+                <a href="#" class="footerBlock__a"><h5>Home</h5></a>
+                <a href="#" class="footerBlock__a"><h5>Examples</h5></a>
+                <a href="#" class="footerBlock__a"><h5>Pricing</h5></a>
+                <a href="#" class="footerBlock__a"><h5>Updates</h5></a>
+            </div>
 
-        </footer>
-    </section>
+            <div class="footerBlock">
+                <h4 class="footerBlock__title">Resources</h4>
+                <a href="#" class="footerBlock__a"><h5>Home</h5></a>
+                <a href="#" class="footerBlock__a"><h5>Examples</h5></a>
+                <a href="#" class="footerBlock__a"><h5>Pricing</h5></a>
+                <a href="#" class="footerBlock__a"><h5>Updates</h5></a>
+            </div>
+
+            <div class="footerBlock">
+                <h4 class="footerBlock__title">About</h4>
+                <a href="#" class="footerBlock__a"><h5>Home</h5></a>
+                <a href="#" class="footerBlock__a"><h5>Examples</h5></a>
+                <a href="#" class="footerBlock__a"><h5>Pricing</h5></a>
+                <a href="#" class="footerBlock__a"><h5>Updates</h5></a>
+            </div>
+        </div>
+
+        <div class="footerInfo">
+            <div class="footerInfo__row">
+                <div class="footerInfo__img footerInfo__img-l">
+                    <img 
+                    src="/assets/img/location_icon.svg"
+                    alt="icon location"
+                    >
+                </div>
+                <h5>7480 Mockingbird Hill undefined</h5>
+            </div>
+
+            <div class="footerInfo__row">
+                <div class="footerInfo__img">
+                    <img 
+                    src="/assets/img/phone_icon.svg"
+                    alt="icon phone"
+                    >
+                </div>
+                <h5>(239)555-0108</h5>
+            </div>
+
+            <div class="socials">
+                <a href="#" class="socials__a">
+                    <img 
+                    src="/assets/img/twitter_logo.svg"
+                    alt="logo twitter"
+                    >
+                </a>
+                <a href="#" class="socials__a">
+                    <img 
+                    src="/assets/img/facebook_logo.svg"
+                    alt="logo facebook"
+                    >
+                </a>
+                <a href="#" class="socials__a">
+                    <img 
+                    src="/assets/img/linkedIn_logo.svg"
+                    alt="logo linkedIn"
+                    >
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
