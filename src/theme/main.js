@@ -7,3 +7,13 @@ nav__flyoutMenu.addEventListener('click', () =>
         nav__flyoutMenu.classList.toggle('nav__flyoutMenu-active')
     }
 )
+
+const button = document.getElementsByClassName("galleryButton")[0]
+const gallery = document.getElementsByClassName("gallery")[0]
+
+button.addEventListener("click", ()=>
+{
+    var clone = gallery.cloneNode(true)
+    gallery.after(clone)
+    button.classList.toggle("display")
+})
