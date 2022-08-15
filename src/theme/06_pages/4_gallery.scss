@@ -1,0 +1,9 @@
+@import "../03_molecules/content1";
+@import "../04_organisms/gallery";
+
+.gallerySection{
+    padding: 4rem 0 4rem 0;
+    .content1{
+        padding-bottom: 0.5rem;
+    }
+}

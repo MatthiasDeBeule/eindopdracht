@@ -3,10 +3,16 @@
 @import "../04_organisms/contentsContent";
 
 .contentsSection{
-    padding: 4rem 0 0 0;
+    padding: 5rem 0 4rem 0;
 }
 
-.contentsContent{
-    margin-top: 1rem;
-    margin-bottom: 1.6rem;
+
+
+@media (min-width: 1100px){
+    .contentsWrapper{
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+        justify-content: center;
+    }
 }
